@@ -1,0 +1,16 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/*settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore Mac OSX invisible files
+.DS_Store
+*.DS_Store
+
+# Ignore SASS cache files
+sites/all/themes/common_field/.sass-cache
+
+sites/sites.php

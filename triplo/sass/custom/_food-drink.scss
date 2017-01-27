@@ -1,0 +1,42 @@
+ul.quicktabs-tabs li {
+    margin-top: 5px;
+    padding: 12px 20px;
+}
+
+ul.quicktabs-tabs li.active {
+    background-color: white;
+}
+
+#page ul.quicktabs-tabs {
+  background-color: grey;
+  padding: 20px 0px 0px;
+  a:hover {
+    color: black;
+  }
+
+}
+
+.quicktabs-tabs {
+  text-align: center;
+}
+
+
+
+
+/* Block for MENU's (PDF) */
+.page-food .region-top, 
+.page-drinks .region-top {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.page-drinks #block-quicktabs-drinks-tabs.block,
+.page-food #block-quicktabs-food-tabs.block {
+  padding: 0px;
+  #block-nodeblock-2,
+  #block-nodeblock-3 {
+    padding: 0px 10px;
+  }
+}

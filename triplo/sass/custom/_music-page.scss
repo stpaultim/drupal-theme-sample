@@ -1,0 +1,193 @@
+.page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f {
+  position: relative;
+  max-width: 1000px;
+  margin: 20px auto 75px;
+  background-color: none;
+  text-align: left;
+  height: auto;
+  padding: 5%;
+  .ui-icon {
+    z-index: 200;
+  }
+  .ui-accordion {
+    position: relative;
+    clear: both;
+    height: 500px !important;
+  }
+  .view-header {
+    text-align: center;
+  }
+  .views-row .views-field-field-event-date {
+    width: 45%;
+
+  }
+
+  .views-field-title-2,
+  .views-field-field-event-date-1 {
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+
+  .event-info-box {
+    width: 90%;
+    margin-right: 5%;
+    height: 450px !important;
+    overflow: scroll;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    clear: both;
+    position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+
+  .ui-accordion-content-active {
+    width: 45%;
+    height: 450px !important;
+    border: 0px solid grey;
+    border-radius: 0px;
+    clear: both;
+    position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+
+  .scroll-message {
+    width: 100%;
+    font-size: 12px;
+    font-style: italic;
+    position: absolute;
+      bottom: 5px;
+      right: 0px;
+    text-align: center;    
+  }
+
+  .ui-state-active,
+  .ui-state-default {
+    border: 0px solid black;
+    border-radius: 0px;
+    background: none;
+    margin-bottom: 10px;
+    z-index: 0;
+    height: 60px;
+    a {
+      z-index: 20;
+      position: absolute;
+      top: 0px;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+
+  .ui-state-active {
+    color: grey;
+    a, a:hover {
+      color: grey;
+    }
+  }
+
+  .views-row .views-field-field-event-date {
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+  }
+
+  .views-row-last .views-field-field-event-date {
+    border-bottom: 0px solid black;
+  }
+
+}
+
+.page-music #ward6block-1 {
+  height: auto;
+}
+
+.view-upcoming-events {
+  background-color: white;
+}
+
+.ui-accordion .ui-accordion-content-active {
+
+}
+
+@media all and (max-width: 1000px) { 
+  .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f {
+    margin: 30px auto 75px;
+    width: 80%;
+    border: 0px solid grey;
+    height: auto !important;
+    .view {
+      clear: both;
+      height: auto !important;
+      a {
+        font-size: 16px;
+      }
+    }
+    .ui-accordion {
+      height: 100% !important;
+    }
+    .views-row .views-field-field-event-date {
+      width: 100%;
+    }
+    .ui-accordion-content-active {
+      width: auto;
+      border: 0px solid grey;
+      border-radius: 0px;
+      position: static;
+      height: auto !important;
+      .views-field-field-event-date-1 {
+        display: none;
+      }
+    }
+    .event-info-box {
+      width: auto;
+      border: 0px solid grey;
+      border-radius: 0px;
+      position: static;
+      height: auto !important;
+    }
+    .views-field-field-musician-image {
+      display: inline;
+      text-align: center;
+      margin: 0px 30px;
+    }
+    .views-field-field-event-date {
+      font-size: 70%
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .break-break:before {
+    display: block;
+    content:' ';
+  }
+  .scroll-message {
+    display: none;
+  }
+  .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f {
+
+    .view {
+
+      h2 {
+        line-height: 1.4em;
+      }
+      a {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .ui-accordion-content {
+        padding: 0px;
+      }
+      .ui-accordion-header a {
+        padding-left: 2em;
+      }
+      .ui-state-default {
+        height: 50px;
+      }
+    }
+  }
+}
+
+
+

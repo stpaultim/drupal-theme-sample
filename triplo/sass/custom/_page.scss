@@ -1,0 +1,95 @@
+body.page-drinks,
+body.page-food,
+body.page-music,
+body.page-story,
+body.page-newsletter,
+body.page-map,
+body.front {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size : cover;
+  background-position: 0px -100px;
+}
+
+body.front {
+  background-image: url('/sites/all/themes/ward6/images/nuts.jpg');
+}
+
+body.page-drinks {
+  background-image: url('/sites/all/themes/ward6/images/w6-img-drink-lemon.jpg');
+}
+
+body.page-food {
+  background-image: url('/sites/all/themes/ward6/images/w6-img-salad.jpg');
+}
+
+body.page-music {
+  background-image: url('/sites/all/themes/ward6/images/w6-img-light.jpg');
+}
+
+body.page-map {
+  background-image: url('/sites/all/themes/ward6/images/w6-img-street-number.jpg');
+}
+
+body.page-story {
+  background-image: url('/sites/all/themes/ward6/images/drinks.jpg');
+}
+
+body.page-newsletter {
+  background-image: url('/sites/all/themes/ward6/images/w6-img-fries.jpg');
+}
+
+#page {
+  max-width: 100%;
+  padding-bottom: 100px;
+  a {
+    color: #39477a;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+    text-decoration: none; 
+  }
+}
+
+#content {
+  background-color: transparent;
+}
+
+.max-width {
+  max-width: $max-width;
+  margin: 0 auto;
+  clear: both;
+  background-color: transparent;
+}
+
+.region-lower-left,
+.region-top-left {
+  float: left;
+  width: 46%;
+  margin: 0 2%;
+}
+
+.region-middle {
+  clear: both;
+}
+
+.region-lower-right,
+.region-top-right {
+  float: right;
+  width: 46%;
+  margin: 0 2%;
+  text-align: right;
+}
+
+.region-lower {
+  clear: both;
+}
+
+#bottom {
+  width: 100%;
+  background-color: white;
+}
+
+
+
+

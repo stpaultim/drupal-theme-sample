@@ -1,0 +1,41 @@
+/* Resets */
+
+#content,
+#main {
+  padding: 0px;
+}
+
+html {
+  font-family: "Roboto Condensed",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0.7em 0;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.3em;
+  margin: 0 0 0.5em;
+}
+
+h4 {
+    font-family: "Arvo";
+}
+
+
+/* Map Page */
+
+#block-nodeblock-4 {
+  background-color: white;
+  box-shadow: 0 3px 8px #3f3f3f;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;  
+}
