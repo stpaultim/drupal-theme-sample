@@ -14,3 +14,5 @@ sites/*/private
 sites/all/themes/common_field/.sass-cache
 
 sites/sites.php
+
+*.sass-cache
