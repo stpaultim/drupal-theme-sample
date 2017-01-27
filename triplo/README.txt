@@ -1,12 +1,5 @@
-This is a Zen sub-theme
+This is zen based subtheme for a small restaurant in the Twin Cities. 
 
-A few notes about how we've developed this theme. In response to a tight budget and timeline and some unique theming requests (that we've not dealt with before), we've taken some shortcuts with the theme. 
+This was themed for a specific site and is not likely to be useful to anyone else for anything other than a code sample. However, feel free to take a look and if you have any comments, let me know.
 
-1) Each page has it's own hardcoded menu. Seemed like 
-   a simple way to swap out the text for an image. Since 
-   the site is very unlikely to be modified much, this seems 
-   like a reasonable way to go. 
-
-2) We've created custom templates for each page. 
-
-3) 
+At this time, it's still a work in progress. 
