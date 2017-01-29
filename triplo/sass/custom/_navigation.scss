@@ -1,13 +1,19 @@
 #navigation {
-  margin: 100px 0px 100px;
+  position: relative;
+  top: inherit;
+  margin: 60px 0px 80px;
+}
+
+#lg-screen-navigation {
+
   background-color: white;
   font-family: "Arvo";
   position: relative;
 }
 
-#navigation #main-menu {
+#lg-screen-navigation #main-menu {
   height: 50px;
-  width: $max-width;
+  max-width: $max-width;
   margin: 0 auto;
   padding-left: auto;
   padding-right: auto;
@@ -75,8 +81,88 @@
   to {opacity: 1;}
 }
 
-@media all and (min-width:800px) {
+/* Logo for mobile display */
+
+.mobile-logo {
+  width: 70px;
+  margin-top: 20px;
+  float: right;
+  margin-right: 4vw;
+}
+
+@media all and (min-width:$responsive-menu) {
   .mobile-logo {
     display: none;
   }
 }
+
+@media all and (max-width:$mobile-menu) {
+  #navigation {
+    background-color: $menu-background;
+    height: 110px;
+    box-shadow: 2px 2px 2px #000;
+    margin: 0px 0px 70px;
+  }
+
+  .toggler {
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 100px;
+  }
+
+  .mobile-logo {
+    display: inline;
+  }
+  .responsive-menus.responsified span.toggler {
+    box-shadow: none;
+    float: left;
+    width: 25%;
+  }
+
+  // Mobile Drop Down Menu
+  #page #main-menu a {
+    color: white;
+  }
+  .responsive-menus {
+
+    li {
+      background-color: #8c4a21;
+    }
+    :hover {
+
+    }
+  }
+
+}
+
+
+/* Responsive Menu */
+
+.responsive-menus.responsified span.toggler {
+    background: $menu-background none repeat scroll 0 0;
+}
+
+.responsive-menus.responsified.responsive-toggled span.toggler {
+    border-bottom: none;
+}
+
+.responsive-menus.responsified .responsive-menus-simple .last a {
+    border-bottom: none;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  top: 110px;
+}
+
+#page .responsive-menus.responsified .responsive-menus-simple li a {
+  padding: .5em 5%;
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+  #page .responsive-menus.responsified .responsive-menus-simple li a:hover {
+    background-color: $menu-background;
+  }
+

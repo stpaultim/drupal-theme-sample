@@ -21,4 +21,7 @@
     } 
   });
 
+  // var hgt = $(window).height();
+  // $("#background").css("height", hgt)
+
 }(jQuery));

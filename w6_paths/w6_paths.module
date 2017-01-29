@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * @file
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function w6_paths_menu() {
+
+  $items['drinks'] = array(
+    'type' => MENU_NORMAL_ITEM,
+    'title' => t('Drinks'),
+    'description' => 'My custom and very special page',
+    'page callback' => 'w6_paths_special_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+  );
+
+  $items['food'] = array(
+    'type' => MENU_NORMAL_ITEM,
+    'title' => t('Food'),
+    'description' => 'My custom and very special page',
+    'page callback' => 'w6_paths_special_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+  );
+
+  $items['map'] = array(
+    'type' => MENU_NORMAL_ITEM,
+    'title' => t('Map'),
+    'description' => 'My custom and very special page',
+    'page callback' => 'w6_paths_special_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+  );
+
+  $items['newsletter'] = array(
+    'type' => MENU_NORMAL_ITEM,
+    'title' => t('Newsletter'),
+    'description' => 'My custom and very special page',
+    'page callback' => 'w6_paths_special_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+  );
+
+  $items['story'] = array(
+    'type' => MENU_NORMAL_ITEM,
+    'title' => t('Story'),
+    'description' => 'My custom and very special page',
+    'page callback' => 'w6_paths_special_page',
+    'access callback' => 'user_access',
+    'access arguments' => array('access content'),
+  );
+
+  $items['music'] = array(
+    'type' => MENU_NORMAL_ITEM,
+    'title' => t('Music'),
+    'description' => 'My custom and very special page',
+    'page callback' => 'w6_paths_special_page',
+    'access callback' => TRUE,
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback.
+ */
+function w6_paths_special_page() {
+  $content = '';
+  // ... do something and add to $content;
+  return $content;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function w6_paths_permission() {
+  $permissions = array();
+  $permissions['administer w6_paths'] = array(
+    'title' => t('TODO: enter permission title'),
+    'description' => t('TODO: enter permission description'),
+  );
+
+  return $permissions;
+}

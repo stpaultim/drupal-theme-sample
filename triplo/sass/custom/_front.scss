@@ -11,3 +11,19 @@
   margin-bottom: 50px;
   text-align: center;
 }
+
+.front .event-date-front {
+    font-weight: 900;
+}
+
+.front .region-top-left .block.last {
+  width: 70%;
+  margin-left: 20%;
+}
+
+@media all and (max-width: $mobile-menu) {
+  .front .region-top-left .block.last {
+    width: 90%;
+    margin-left: 0%;
+  }
+}

@@ -1,19 +1,80 @@
 .block {
   background-color: white;
   padding: 5%;
+  box-shadow: 0 3px 8px #3f3f3f;
 }
+
+#bottom .block {
+  box-shadow: none;
+}
+
+#block-nodeblock-5,
+#block-nodeblock-8 {
+  box-shadow: none;
+}
+
+// Contact Info Block
 
 #block-block-4 {
   width: 60%;
   margin-left: 30%;
 }
 
-#block-block-6 {
-  width: 64%;
-  margin-left: 30%;
-  padding: 3%;
+@media all and (max-width: $mobile-menu) {
+  #block-block-4 {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
-#footer .block {
-  padding: 2.5%;
+// Hours Block
+#block-nodeblock-19 {
+  max-width: 400px;
+  margin: 20px auto 40px;
+  padding: 20px;
+}
+
+// About Wart 6 Block at bottom of front page
+
+#block-block-6 {
+  max-width: $max-width;
+  margin: 20px auto 40px;
+  padding: 20px;
+}
+
+@media all and (max-width: $mobile-menu) {
+  #block-block-6 {
+    width: 90%;
+    margin-left: 0%;
+    padding: 5%;
+  }
+}
+
+#block-nodeblock-9 {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+/* Map Page */
+
+#block-nodeblock-4 {
+  background-color: white;
+  box-shadow: 0 3px 8px #3f3f3f;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;  
+}
+
+@media all and (max-width: $mobile-menu) {
+  #block-nodeblock-4 {
+    width: 95%;  
+  }
+}
+
+// Block for Mailchimp signup
+
+#block-mailchimp-signup-ward-6-newsletter {
+  max-width: 400px;
+  margin: 50px auto;
 }

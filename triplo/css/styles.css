@@ -1797,24 +1797,82 @@ tr.selected td {
 .block {
   background-color: white;
   padding: 5%;
+  box-shadow: 0 3px 8px #3f3f3f;
 }
 
-/* line 6, ../sass/custom/_blocks.scss */
+/* line 7, ../sass/custom/_blocks.scss */
+#bottom .block {
+  box-shadow: none;
+}
+
+/* line 12, ../sass/custom/_blocks.scss */
+#block-nodeblock-5,
+#block-nodeblock-8 {
+  box-shadow: none;
+}
+
+/* line 18, ../sass/custom/_blocks.scss */
 #block-block-4 {
   width: 60%;
   margin-left: 30%;
 }
 
-/* line 11, ../sass/custom/_blocks.scss */
-#block-block-6 {
-  width: 64%;
-  margin-left: 30%;
-  padding: 3%;
+@media all and (max-width: 899px) {
+  /* line 24, ../sass/custom/_blocks.scss */
+  #block-block-4 {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/* line 32, ../sass/custom/_blocks.scss */
+#block-nodeblock-19 {
+  max-width: 400px;
+  margin: 20px auto 40px;
+  padding: 20px;
 }
 
-/* line 17, ../sass/custom/_blocks.scss */
-#footer .block {
-  padding: 2.5%;
+/* line 40, ../sass/custom/_blocks.scss */
+#block-block-6 {
+  max-width: 1000px;
+  margin: 20px auto 40px;
+  padding: 20px;
+}
+
+@media all and (max-width: 899px) {
+  /* line 47, ../sass/custom/_blocks.scss */
+  #block-block-6 {
+    width: 90%;
+    margin-left: 0%;
+    padding: 5%;
+  }
+}
+/* line 54, ../sass/custom/_blocks.scss */
+#block-nodeblock-9 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Map Page */
+/* line 61, ../sass/custom/_blocks.scss */
+#block-nodeblock-4 {
+  background-color: white;
+  box-shadow: 0 3px 8px #3f3f3f;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+
+@media all and (max-width: 899px) {
+  /* line 70, ../sass/custom/_blocks.scss */
+  #block-nodeblock-4 {
+    width: 95%;
+  }
+}
+/* line 77, ../sass/custom/_blocks.scss */
+#block-mailchimp-signup-ward-6-newsletter {
+  max-width: 400px;
+  margin: 50px auto;
 }
 
 /* line 1, ../sass/custom/_footer.scss */
@@ -1852,6 +1910,43 @@ tr.selected td {
   max-width: 100px;
 }
 
+/* line 32, ../sass/custom/_footer.scss */
+#footer .block {
+  padding: 2.5%;
+}
+
+@media all and (max-width: 899px) {
+  /* line 38, ../sass/custom/_footer.scss */
+  #footer p {
+    margin: 0px;
+    text-align: center;
+  }
+  /* line 42, ../sass/custom/_footer.scss */
+  #footer .block {
+    padding: 0px;
+  }
+  /* line 45, ../sass/custom/_footer.scss */
+  #footer #block-block-9 {
+    float: left;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 51, ../sass/custom/_footer.scss */
+  #footer #block-block-15 {
+    float: none;
+    margin-top: 0px;
+    width: 100%;
+  }
+  /* line 55, ../sass/custom/_footer.scss */
+  #footer #block-block-15 p img {
+    float: none;
+  }
+  /* line 60, ../sass/custom/_footer.scss */
+  #footer #block-block-16 img {
+    margin-top: -55px;
+  }
+}
 /* line 1, ../sass/custom/_front.scss */
 .hr-food-drink {
   margin-top: -50px;
@@ -1868,107 +1963,181 @@ tr.selected td {
   text-align: center;
 }
 
+/* line 15, ../sass/custom/_front.scss */
+.front .event-date-front {
+  font-weight: 900;
+}
+
+/* line 19, ../sass/custom/_front.scss */
+.front .region-top-left .block.last {
+  width: 70%;
+  margin-left: 20%;
+}
+
+@media all and (max-width: 899px) {
+  /* line 25, ../sass/custom/_front.scss */
+  .front .region-top-left .block.last {
+    width: 90%;
+    margin-left: 0%;
+  }
+}
 /* Resets */
-/* line 4, ../sass/custom/_general.scss */
+/* line 5, ../sass/custom/_general.scss */
+#navigation,
 #content,
 #main {
+  margin: 0px;
   padding: 0px;
 }
 
-/* line 8, ../sass/custom/_general.scss */
+/* line 10, ../sass/custom/_general.scss */
 html {
   font-family: "Roboto Condensed",Arial,Helvetica,"Nimbus Sans L",sans-serif;
   font-weight: 300;
 }
 
-/* line 13, ../sass/custom/_general.scss */
+/* line 15, ../sass/custom/_general.scss */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 18, ../sass/custom/_general.scss */
+/* line 20, ../sass/custom/_general.scss */
 p {
   margin: 0.7em 0;
 }
 
-/* line 22, ../sass/custom/_general.scss */
+/* line 24, ../sass/custom/_general.scss */
 h1 {
   font-weight: 300;
   line-height: 1.3em;
   margin: 0 0 0.5em;
 }
 
-/* line 28, ../sass/custom/_general.scss */
+/* line 30, ../sass/custom/_general.scss */
 h4 {
   font-family: "Arvo";
 }
 
-/* Map Page */
-/* line 35, ../sass/custom/_general.scss */
-#block-nodeblock-4 {
-  background-color: white;
-  box-shadow: 0 3px 8px #3f3f3f;
-  margin: 0 auto;
-  padding: 0;
-  width: 80%;
+/* line 34, ../sass/custom/_general.scss */
+.big-words {
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
-/* line 7, ../sass/custom/_page.scss */
-body.page-drinks,
-body.page-food,
-body.page-music,
-body.page-story,
-body.page-newsletter,
-body.page-map,
-body.front {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/* line 1, ../sass/custom/_page.scss */
+#background {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 2000px;
+  z-index: -100;
+}
+
+/* line 9, ../sass/custom/_page.scss */
+body.front #background {
+  background: url("/sites/all/themes/ward6/images/ward6-sandwich2.jpg");
   background-size: cover;
-  background-position: 0px -100px;
 }
 
 /* line 14, ../sass/custom/_page.scss */
-body.front {
-  background-image: url("/sites/all/themes/ward6/images/nuts.jpg");
+body.page-drinks #background {
+  background: url("/sites/all/themes/ward6/images/w6-img-drink-lemon.jpg");
+  background-size: cover;
 }
 
-/* line 18, ../sass/custom/_page.scss */
-body.page-drinks {
-  background-image: url("/sites/all/themes/ward6/images/w6-img-drink-lemon.jpg");
+/* line 19, ../sass/custom/_page.scss */
+body.page-food #background {
+  background: url("/sites/all/themes/ward6/images/w6-breads3.jpg");
+  background-size: cover;
 }
 
-/* line 22, ../sass/custom/_page.scss */
-body.page-food {
-  background-image: url("/sites/all/themes/ward6/images/w6-img-salad.jpg");
+/* line 24, ../sass/custom/_page.scss */
+body.page-music #background {
+  background: url("/sites/all/themes/ward6/images/w6-img-light.jpg");
+  background-size: cover;
 }
 
-/* line 26, ../sass/custom/_page.scss */
-body.page-music {
-  background-image: url("/sites/all/themes/ward6/images/w6-img-light.jpg");
-}
-
-/* line 30, ../sass/custom/_page.scss */
-body.page-map {
-  background-image: url("/sites/all/themes/ward6/images/w6-img-street-number.jpg");
+/* line 29, ../sass/custom/_page.scss */
+body.page-map #background {
+  background: url("/sites/all/themes/ward6/images/w6-img-street-number.jpg");
+  background-size: cover;
 }
 
 /* line 34, ../sass/custom/_page.scss */
-body.page-story {
-  background-image: url("/sites/all/themes/ward6/images/drinks.jpg");
+body.page-story #background {
+  background: url("/sites/all/themes/ward6/images/drinks.jpg");
+  background-size: cover;
 }
 
-/* line 38, ../sass/custom/_page.scss */
-body.page-newsletter {
-  background-image: url("/sites/all/themes/ward6/images/w6-img-fries.jpg");
+/* line 39, ../sass/custom/_page.scss */
+body.page-newsletter #background {
+  background: url("/sites/all/themes/ward6/images/ward6-side.jpg");
+  background-size: cover;
 }
 
-/* line 42, ../sass/custom/_page.scss */
+@media all and (max-width: 1500px) {
+  /* line 52, ../sass/custom/_page.scss */
+  body.front #background,
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 1500px;
+    width: 1500px;
+  }
+}
+@media all and (max-width: 1000px) {
+  /* line 66, ../sass/custom/_page.scss */
+  body.front #background,
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 1000px;
+    width: 1000px;
+  }
+}
+@media all and (max-width: 750px) {
+  /* line 80, ../sass/custom/_page.scss */
+  body.front #background,
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 750px;
+    width: 750px;
+  }
+}
+@media all and (max-width: 500px) {
+  /* line 94, ../sass/custom/_page.scss */
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 600px;
+    width: 500px;
+  }
+}
+/* line 100, ../sass/custom/_page.scss */
 #page {
   max-width: 100%;
   padding-bottom: 100px;
 }
-/* line 45, ../sass/custom/_page.scss */
+/* line 103, ../sass/custom/_page.scss */
 #page a {
   color: #39477a;
   font-size: 18px;
@@ -1977,12 +2146,18 @@ body.page-newsletter {
   text-decoration: none;
 }
 
-/* line 54, ../sass/custom/_page.scss */
+/* line 112, ../sass/custom/_page.scss */
+.messages, .messages--status, .messages--warning, .messages--error {
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+/* line 117, ../sass/custom/_page.scss */
 #content {
   background-color: transparent;
 }
 
-/* line 58, ../sass/custom/_page.scss */
+/* line 121, ../sass/custom/_page.scss */
 .max-width {
   max-width: 1000px;
   margin: 0 auto;
@@ -1990,7 +2165,7 @@ body.page-newsletter {
   background-color: transparent;
 }
 
-/* line 66, ../sass/custom/_page.scss */
+/* line 129, ../sass/custom/_page.scss */
 .region-lower-left,
 .region-top-left {
   float: left;
@@ -1998,12 +2173,12 @@ body.page-newsletter {
   margin: 0 2%;
 }
 
-/* line 72, ../sass/custom/_page.scss */
+/* line 135, ../sass/custom/_page.scss */
 .region-middle {
   clear: both;
 }
 
-/* line 77, ../sass/custom/_page.scss */
+/* line 140, ../sass/custom/_page.scss */
 .region-lower-right,
 .region-top-right {
   float: right;
@@ -2012,66 +2187,227 @@ body.page-newsletter {
   text-align: right;
 }
 
-/* line 84, ../sass/custom/_page.scss */
+/* line 147, ../sass/custom/_page.scss */
 .region-lower {
   clear: both;
 }
 
-/* line 88, ../sass/custom/_page.scss */
+/* line 151, ../sass/custom/_page.scss */
 #bottom {
   width: 100%;
   background-color: white;
 }
 
+@media all and (max-width: 1000px) {
+  /* line 158, ../sass/custom/_page.scss */
+  body.page-story #background,
+  #background {
+    background-size: 1000px;
+    width: 1000px;
+  }
+}
+@media all and (max-width: 750px) {
+  /* line 166, ../sass/custom/_page.scss */
+  body.page-story #background,
+  #background {
+    background-size: 750px;
+    width: 750px;
+  }
+}
+@media all and (max-width: 500px) {
+  /* line 174, ../sass/custom/_page.scss */
+  body.page-story #background,
+  #background {
+    background-size: 600px;
+    width: 500px;
+  }
+}
+@media all and (max-width: 899px) {
+  /* line 184, ../sass/custom/_page.scss */
+  .region-lower-left,
+  .region-top-left,
+  .region-lower-right,
+  .region-top-right {
+    float: none;
+    margin-left: 5%;
+    width: 90%;
+  }
+}
 /* line 1, ../sass/custom/_food-drink.scss */
-ul.quicktabs-tabs li {
+#page ul.quicktabs-tabs li {
   margin-top: 5px;
-  padding: 12px 20px;
+  padding: 12px 10px;
+}
+/* line 4, ../sass/custom/_food-drink.scss */
+#page ul.quicktabs-tabs li a {
+  font-size: 14px;
 }
 
-/* line 6, ../sass/custom/_food-drink.scss */
+/* line 10, ../sass/custom/_food-drink.scss */
 ul.quicktabs-tabs li.active {
   background-color: white;
 }
 
-/* line 10, ../sass/custom/_food-drink.scss */
+/* line 14, ../sass/custom/_food-drink.scss */
 #page ul.quicktabs-tabs {
   background-color: grey;
   padding: 20px 0px 0px;
 }
-/* line 13, ../sass/custom/_food-drink.scss */
+/* line 17, ../sass/custom/_food-drink.scss */
 #page ul.quicktabs-tabs a:hover {
   color: black;
 }
 
-/* line 19, ../sass/custom/_food-drink.scss */
+/* line 24, ../sass/custom/_food-drink.scss */
+#pdf_reader {
+  height: 1300px;
+  width: 800px;
+}
+
+@media all and (max-width: 899px) {
+  /* line 30, ../sass/custom/_food-drink.scss */
+  #pdf_reader {
+    height: 150vw;
+    width: 97%;
+  }
+}
+/* line 38, ../sass/custom/_food-drink.scss */
 .quicktabs-tabs {
   text-align: center;
 }
 
+/* line 43, ../sass/custom/_food-drink.scss */
+#page a.pdf-reader-download-link {
+  text-align: center;
+  display: block;
+}
+
 /* Block for MENU's (PDF) */
-/* line 28, ../sass/custom/_food-drink.scss */
+/* line 51, ../sass/custom/_food-drink.scss */
 .page-food .region-top,
 .page-drinks .region-top {
   float: none;
   margin-left: auto;
   margin-right: auto;
   width: 800px;
+  height: auto;
+}
+/* line 57, ../sass/custom/_food-drink.scss */
+.page-food .region-top .field-name-body,
+.page-drinks .region-top .field-name-body {
+  padding: 25px;
 }
 
-/* line 36, ../sass/custom/_food-drink.scss */
+/* line 63, ../sass/custom/_food-drink.scss */
 .page-drinks #block-quicktabs-drinks-tabs.block,
 .page-food #block-quicktabs-food-tabs.block {
   padding: 0px;
 }
-/* line 39, ../sass/custom/_food-drink.scss */
+/* line 69, ../sass/custom/_food-drink.scss */
+.page-drinks #block-quicktabs-drinks-tabs.block #block-nodeblock-43,
+.page-drinks #block-quicktabs-drinks-tabs.block #block-nodeblock-48,
+.page-drinks #block-quicktabs-drinks-tabs.block #block-nodeblock-46,
 .page-drinks #block-quicktabs-drinks-tabs.block #block-nodeblock-2,
 .page-drinks #block-quicktabs-drinks-tabs.block #block-nodeblock-3,
+.page-food #block-quicktabs-food-tabs.block #block-nodeblock-43,
+.page-food #block-quicktabs-food-tabs.block #block-nodeblock-48,
+.page-food #block-quicktabs-food-tabs.block #block-nodeblock-46,
 .page-food #block-quicktabs-food-tabs.block #block-nodeblock-2,
 .page-food #block-quicktabs-food-tabs.block #block-nodeblock-3 {
-  padding: 0px 10px;
+  padding: 0px 0px;
 }
 
+/* line 77, ../sass/custom/_food-drink.scss */
+#block-nodeblock-44,
+#block-nodeblock-43,
+#block-nodeblock-48,
+#block-nodeblock-2 {
+  padding: 0px 0px;
+}
+
+@media all and (max-width: 899px) {
+  /* line 83, ../sass/custom/_food-drink.scss */
+  .page-food .region-top,
+  .page-drinks .region-top {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  /* line 88, ../sass/custom/_food-drink.scss */
+  .page-food .region-top #block-nodeblock-3,
+  .page-drinks .region-top #block-nodeblock-3 {
+    width: 100%;
+  }
+}
+/* line 2, ../sass/custom/_story-page.scss */
+.page-story .left-column .region {
+  width: 40%;
+  margin: 0 0 0 10%;
+}
+/* line 6, ../sass/custom/_story-page.scss */
+.page-story .right-column .region {
+  width: 40%;
+  margin: 0 10% 0 0%;
+}
+/* line 10, ../sass/custom/_story-page.scss */
+.page-story .right-column .region-top-right {
+  width: 30%;
+  margin: 0 20% 0 0%;
+}
+/* line 14, ../sass/custom/_story-page.scss */
+.page-story .left-column .region-lower-left {
+  width: 30%;
+  margin: 0 0% 0 20%;
+}
+/* line 19, ../sass/custom/_story-page.scss */
+.page-story .region-lower {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 899px) {
+  /* line 27, ../sass/custom/_story-page.scss */
+  .page-story .left-column .region {
+    float: none;
+    width: 90%;
+    margin: 0 5%;
+  }
+  /* line 32, ../sass/custom/_story-page.scss */
+  .page-story .right-column .region {
+    float: none;
+    width: 90%;
+    margin: 0 5%;
+  }
+  /* line 38, ../sass/custom/_story-page.scss */
+  .page-story .left-column .region-lower-left,
+  .page-story .right-column .region-top-right {
+    float: none;
+    width: 50%;
+    margin: 0 25%;
+    padding: 2%;
+  }
+  /* line 43, ../sass/custom/_story-page.scss */
+  .page-story .left-column .region-lower-left p,
+  .page-story .right-column .region-top-right p {
+    margin: 0px;
+  }
+  /* line 45, ../sass/custom/_story-page.scss */
+  .page-story .left-column .region-lower-left p img,
+  .page-story .right-column .region-top-right p img {
+    width: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  /* line 57, ../sass/custom/_story-page.scss */
+  .page-story .left-column .region-lower-left,
+  .page-story .right-column .region-top-right {
+    float: none;
+    width: 70%;
+    margin: 0 15%;
+    padding: 2%;
+  }
+}
 /* line 1, ../sass/custom/_music-page.scss */
 .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f {
   position: relative;
@@ -2176,128 +2512,149 @@ ul.quicktabs-tabs li.active {
   border-bottom: 1px solid black;
 }
 /* line 95, ../sass/custom/_music-page.scss */
+.page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .views-row .views-field-field-event-date.ui-state-active {
+  border-bottom: 0px solid black;
+  padding-bottom: 0px;
+}
+/* line 100, ../sass/custom/_music-page.scss */
 .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .views-row-last .views-field-field-event-date {
   border-bottom: 0px solid black;
 }
 
-/* line 101, ../sass/custom/_music-page.scss */
+/* line 106, ../sass/custom/_music-page.scss */
 .page-music #ward6block-1 {
   height: auto;
 }
 
-/* line 105, ../sass/custom/_music-page.scss */
+/* line 110, ../sass/custom/_music-page.scss */
 .view-upcoming-events {
   background-color: white;
 }
 
 @media all and (max-width: 1000px) {
-  /* line 114, ../sass/custom/_music-page.scss */
+  /* line 119, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f {
     margin: 30px auto 75px;
     width: 80%;
     border: 0px solid grey;
     height: auto !important;
   }
-  /* line 119, ../sass/custom/_music-page.scss */
+  /* line 124, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .view {
     clear: both;
     height: auto !important;
   }
-  /* line 122, ../sass/custom/_music-page.scss */
+  /* line 127, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .view a {
     font-size: 16px;
   }
-  /* line 126, ../sass/custom/_music-page.scss */
+  /* line 131, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .ui-accordion {
     height: 100% !important;
   }
-  /* line 129, ../sass/custom/_music-page.scss */
+  /* line 134, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .views-row .views-field-field-event-date {
     width: 100%;
   }
-  /* line 132, ../sass/custom/_music-page.scss */
+  /* line 137, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .ui-accordion-content-active {
     width: auto;
-    border: 0px solid grey;
+    border-bottom: 1px solid black;
     border-radius: 0px;
     position: static;
     height: auto !important;
   }
-  /* line 138, ../sass/custom/_music-page.scss */
+  /* line 143, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .ui-accordion-content-active .views-field-field-event-date-1 {
     display: none;
   }
-  /* line 142, ../sass/custom/_music-page.scss */
+  /* line 146, ../sass/custom/_music-page.scss */
+  .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .ui-accordion-content-active p {
+    font-size: 80%;
+  }
+  /* line 151, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .event-info-box {
     width: auto;
     border: 0px solid grey;
     border-radius: 0px;
     position: static;
     height: auto !important;
+    margin-left: 25px;
+    margin-top: -10px;
   }
-  /* line 149, ../sass/custom/_music-page.scss */
+  /* line 160, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .views-field-field-musician-image {
     display: inline;
     text-align: center;
     margin: 0px 30px;
   }
-  /* line 154, ../sass/custom/_music-page.scss */
+  /* line 165, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .views-field-field-event-date {
     font-size: 70%;
   }
+  /* line 168, ../sass/custom/_music-page.scss */
+  .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .ui-accordion .ui-accordion-header .ui-icon {
+    margin-top: -18px;
+  }
 }
 @media all and (max-width: 1000px) {
-  /* line 161, ../sass/custom/_music-page.scss */
+  /* line 175, ../sass/custom/_music-page.scss */
   .break-break:before {
     display: block;
     content: ' ';
   }
 
-  /* line 165, ../sass/custom/_music-page.scss */
+  /* line 179, ../sass/custom/_music-page.scss */
   .scroll-message {
     display: none;
   }
 
-  /* line 172, ../sass/custom/_music-page.scss */
+  /* line 186, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .view h2 {
     line-height: 1.4em;
   }
-  /* line 175, ../sass/custom/_music-page.scss */
+  /* line 189, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .view a {
     font-size: 13px;
     font-weight: 600;
   }
-  /* line 179, ../sass/custom/_music-page.scss */
+  /* line 193, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .view .ui-accordion-content {
     padding: 0px;
   }
-  /* line 182, ../sass/custom/_music-page.scss */
+  /* line 196, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .view .ui-accordion-header a {
     padding-left: 2em;
   }
-  /* line 185, ../sass/custom/_music-page.scss */
+  /* line 199, ../sass/custom/_music-page.scss */
   .page-music .region-top #block-views-a826b65cf31c357581682bc4aa94544f .view .ui-state-default {
     height: 50px;
   }
 }
 /* line 1, ../sass/custom/_navigation.scss */
 #navigation {
-  margin: 100px 0px 100px;
+  position: relative;
+  top: inherit;
+  margin: 60px 0px 80px;
+}
+
+/* line 7, ../sass/custom/_navigation.scss */
+#lg-screen-navigation {
   background-color: white;
   font-family: "Arvo";
   position: relative;
 }
 
-/* line 8, ../sass/custom/_navigation.scss */
-#navigation #main-menu {
+/* line 14, ../sass/custom/_navigation.scss */
+#lg-screen-navigation #main-menu {
   height: 50px;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-left: auto;
   padding-right: auto;
 }
-/* line 14, ../sass/custom/_navigation.scss */
-#navigation #main-menu li {
+/* line 20, ../sass/custom/_navigation.scss */
+#lg-screen-navigation #main-menu li {
   display: block;
   float: left;
   padding-top: 12px;
@@ -2305,8 +2662,8 @@ ul.quicktabs-tabs li.active {
   width: 120px;
   color: black;
 }
-/* line 22, ../sass/custom/_navigation.scss */
-#navigation #main-menu li.active {
+/* line 28, ../sass/custom/_navigation.scss */
+#lg-screen-navigation #main-menu li.active {
   border: 0px solid red;
   background-image: url("/sites/all/themes/ward6/images/logo_background_brown.png");
   background-size: 120px;
@@ -2318,15 +2675,15 @@ ul.quicktabs-tabs li.active {
   top: -35px;
   animation: myfirst 0.5s;
 }
-/* line 34, ../sass/custom/_navigation.scss */
-#navigation #main-menu li.active a {
+/* line 40, ../sass/custom/_navigation.scss */
+#lg-screen-navigation #main-menu li.active a {
   display: block;
   width: 115px;
   margin: 35px auto;
   color: white;
 }
-/* line 42, ../sass/custom/_navigation.scss */
-#navigation #main-menu li.selected {
+/* line 48, ../sass/custom/_navigation.scss */
+#lg-screen-navigation #main-menu li.selected {
   background-image: url("/sites/all/themes/ward6/images/logo_background.png");
   background-size: 100px;
   width: 90px;
@@ -2337,34 +2694,21 @@ ul.quicktabs-tabs li.active {
   top: -25px;
   animation: myfirst 0.5s;
 }
-/* line 52, ../sass/custom/_navigation.scss */
-#navigation #main-menu li.selected a {
+/* line 58, ../sass/custom/_navigation.scss */
+#lg-screen-navigation #main-menu li.selected a {
   display: block;
   color: white;
   width: 100px;
   margin: 25px auto;
   font-size: 15px;
 }
-/* line 58, ../sass/custom/_navigation.scss */
-#navigation #main-menu li.selected a :hover {
+/* line 64, ../sass/custom/_navigation.scss */
+#lg-screen-navigation #main-menu li.selected a :hover {
   color: white;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
-  /* line 68, ../sass/custom/_navigation.scss */
-  from {
-    opacity: 0.2;
-  }
-
-  /* line 69, ../sass/custom/_navigation.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-/* Standard syntax */
-@keyframes myfirst {
   /* line 74, ../sass/custom/_navigation.scss */
   from {
     opacity: 0.2;
@@ -2376,12 +2720,106 @@ ul.quicktabs-tabs li.active {
   }
 }
 
-@media all and (min-width: 800px) {
-  /* line 79, ../sass/custom/_navigation.scss */
+/* Standard syntax */
+@keyframes myfirst {
+  /* line 80, ../sass/custom/_navigation.scss */
+  from {
+    opacity: 0.2;
+  }
+
+  /* line 81, ../sass/custom/_navigation.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Logo for mobile display */
+/* line 86, ../sass/custom/_navigation.scss */
+.mobile-logo {
+  width: 70px;
+  margin-top: 20px;
+  float: right;
+  margin-right: 4vw;
+}
+
+@media all and (min-width: 900px) {
+  /* line 94, ../sass/custom/_navigation.scss */
   .mobile-logo {
     display: none;
   }
 }
+@media all and (max-width: 899px) {
+  /* line 100, ../sass/custom/_navigation.scss */
+  #navigation {
+    background-color: #582302;
+    height: 110px;
+    box-shadow: 2px 2px 2px #000;
+    margin: 0px 0px 70px;
+  }
+
+  /* line 107, ../sass/custom/_navigation.scss */
+  .toggler {
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 100px;
+  }
+
+  /* line 113, ../sass/custom/_navigation.scss */
+  .mobile-logo {
+    display: inline;
+  }
+
+  /* line 116, ../sass/custom/_navigation.scss */
+  .responsive-menus.responsified span.toggler {
+    box-shadow: none;
+    float: left;
+    width: 25%;
+  }
+
+  /* line 123, ../sass/custom/_navigation.scss */
+  #page #main-menu a {
+    color: white;
+  }
+
+  /* line 128, ../sass/custom/_navigation.scss */
+  .responsive-menus li {
+    background-color: #8c4a21;
+  }
+}
+/* Responsive Menu */
+/* line 141, ../sass/custom/_navigation.scss */
+.responsive-menus.responsified span.toggler {
+  background: #582302 none repeat scroll 0 0;
+}
+
+/* line 145, ../sass/custom/_navigation.scss */
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-bottom: none;
+}
+
+/* line 149, ../sass/custom/_navigation.scss */
+.responsive-menus.responsified .responsive-menus-simple .last a {
+  border-bottom: none;
+}
+
+/* line 153, ../sass/custom/_navigation.scss */
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  top: 110px;
+}
+
+/* line 157, ../sass/custom/_navigation.scss */
+#page .responsive-menus.responsified .responsive-menus-simple li a {
+  padding: .5em 5%;
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* line 165, ../sass/custom/_navigation.scss */
+#page .responsive-menus.responsified .responsive-menus-simple li a:hover {
+  background-color: #582302;
+}
+
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */

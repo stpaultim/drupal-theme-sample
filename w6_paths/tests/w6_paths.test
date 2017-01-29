@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains tests for the Ward6 Paths module.
+ */
+
+/**
+ * Test case.
+ */
+class W6PathsTestCase extends DrupalWebTestCase {
+
+  /**
+   * Implements getInfo().
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Ward6 Paths tests'),
+      'description' => t('TODO: write me.'),
+      'group' => t('Ward6 Paths'),
+    );
+  }
+
+  /**
+   * Implements setUp().
+   */
+  function setUp() {
+    // Call the parent with an array of modules to enable for the test.
+    parent::setUp(array('w6_paths'));
+
+    // TODO: perform additional setup tasks here if required.
+  }
+
+  /**
+   * Test the module's functionality.
+   */
+  function testTodoChangeThisName() {
+    // TODO: write test!
+  }
+
+}

@@ -1,42 +1,100 @@
-body.page-drinks,
-body.page-food,
-body.page-music,
-body.page-story,
-body.page-newsletter,
-body.page-map,
-body.front {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size : cover;
-  background-position: 0px -100px;
+#background {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 2000px;
+  z-index: -100;
 }
 
-body.front {
-  background-image: url('/sites/all/themes/ward6/images/nuts.jpg');
+body.front #background {
+  background: url('/sites/all/themes/ward6/images/ward6-sandwich2.jpg');
+  background-size: cover;
 }
 
-body.page-drinks {
-  background-image: url('/sites/all/themes/ward6/images/w6-img-drink-lemon.jpg');
+body.page-drinks #background {
+  background: url('/sites/all/themes/ward6/images/w6-img-drink-lemon.jpg');
+  background-size: cover;
 }
 
-body.page-food {
-  background-image: url('/sites/all/themes/ward6/images/w6-img-salad.jpg');
+body.page-food #background {
+  background: url('/sites/all/themes/ward6/images/w6-breads3.jpg');
+  background-size: cover;
 }
 
-body.page-music {
-  background-image: url('/sites/all/themes/ward6/images/w6-img-light.jpg');
+body.page-music #background {
+  background: url('/sites/all/themes/ward6/images/w6-img-light.jpg');
+  background-size: cover;
 }
 
-body.page-map {
-  background-image: url('/sites/all/themes/ward6/images/w6-img-street-number.jpg');
+body.page-map #background {
+  background: url('/sites/all/themes/ward6/images/w6-img-street-number.jpg');
+  background-size: cover;
 }
 
-body.page-story {
-  background-image: url('/sites/all/themes/ward6/images/drinks.jpg');
+body.page-story #background {
+  background: url('/sites/all/themes/ward6/images/drinks.jpg');
+  background-size: cover;
 }
 
-body.page-newsletter {
-  background-image: url('/sites/all/themes/ward6/images/w6-img-fries.jpg');
+body.page-newsletter #background {
+  background: url('/sites/all/themes/ward6/images/ward6-side.jpg');
+  background-size: cover;
+}
+
+@media all and (max-width: 1500px) {
+  body.front #background,
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 1500px;
+    width: 1500px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  body.front #background,
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 1000px;
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  body.front #background,
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 750px;
+    width: 750px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  // body.front #background,
+  body.page-drinks #background,
+  body.page-food #background,
+  body.page-music #background,
+  body.page-map #background,
+  body.page-story #background,
+  body.page-newsletter #background,
+  #background {
+    background-size: 600px;
+    width: 500px;
+  }
 }
 
 #page {
@@ -49,6 +107,11 @@ body.page-newsletter {
     margin: 0;
     text-decoration: none; 
   }
+}
+
+.messages {
+  max-width: 900px;
+  margin: 0 auto 20px;
 }
 
 #content {
@@ -88,6 +151,41 @@ body.page-newsletter {
 #bottom {
   width: 100%;
   background-color: white;
+}
+
+@media all and (max-width: 1000px) {
+  body.page-story #background,
+  #background {
+    background-size: 1000px;
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  body.page-story #background,
+  #background {
+    background-size: 750px;
+    width: 750px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body.page-story #background,
+  #background {
+    background-size: 600px;
+    width: 500px;
+  }
+}
+
+@media all and (max-width:$mobile-menu) {
+  .region-lower-left,
+  .region-top-left,
+  .region-lower-right,
+  .region-top-right {
+      float: none;
+      margin-left: 5%;
+      width: 90%;
+  }
 }
 
 

@@ -1,7 +1,9 @@
 /* Resets */
 
+#navigation,
 #content,
 #main {
+  margin: 0px;
   padding: 0px;
 }
 
@@ -26,16 +28,11 @@ h1 {
 }
 
 h4 {
-    font-family: "Arvo";
+  font-family: "Arvo";
 }
 
-
-/* Map Page */
-
-#block-nodeblock-4 {
-  background-color: white;
-  box-shadow: 0 3px 8px #3f3f3f;
-  margin: 0 auto;
-  padding: 0;
-  width: 80%;  
+.big-words {
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
 }

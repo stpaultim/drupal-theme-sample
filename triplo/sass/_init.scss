@@ -59,7 +59,14 @@ $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
-$max-width   : 1000px;
+$max-width        : 1000px;
+
+// $responsive-menu must match value set in Responsive Menu module config
+$responsive-menu  :  900px;
+
+$mobile-menu      :  $responsive-menu - 1;
+
+$smallest-break   :  500px;
 
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu
@@ -95,6 +102,8 @@ $font-monospace:   $courier;
 //
 // Colors, etc.
 //
+
+$menu-background:             #582302;
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;

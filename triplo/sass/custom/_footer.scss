@@ -28,3 +28,38 @@
     }
   }
 }
+
+#footer .block {
+  padding: 2.5%;
+}
+
+@media all and (max-width:$mobile-menu) {
+  #footer {
+    p {
+      margin: 0px;
+      text-align: center;
+    }
+    .block {
+      padding: 0px;
+    }
+    #block-block-9 {
+      float: left;
+      margin-top: 0px;
+      width: 100%;
+      text-align: center;
+    }
+    #block-block-15 {
+      float: none;
+      margin-top: 0px;
+      width: 100%;
+      p img {
+        float: none;
+      }
+    }
+    #block-block-16 {
+      img {
+        margin-top: -55px;
+      }
+    }
+  }
+}

@@ -92,6 +92,11 @@
     border-bottom: 1px solid black;
   }
 
+  .views-row .views-field-field-event-date.ui-state-active {
+    border-bottom: 0px solid black;
+    padding-bottom: 0px;
+  }
+
   .views-row-last .views-field-field-event-date {
     border-bottom: 0px solid black;
   }
@@ -131,20 +136,26 @@
     }
     .ui-accordion-content-active {
       width: auto;
-      border: 0px solid grey;
+      border-bottom: 1px solid black;
       border-radius: 0px;
       position: static;
       height: auto !important;
       .views-field-field-event-date-1 {
         display: none;
       }
+      p {
+        font-size: 80%;
+      }
     }
+
     .event-info-box {
       width: auto;
       border: 0px solid grey;
       border-radius: 0px;
       position: static;
       height: auto !important;
+      margin-left: 25px;
+      margin-top: -10px;
     }
     .views-field-field-musician-image {
       display: inline;
@@ -153,6 +164,9 @@
     }
     .views-field-field-event-date {
       font-size: 70%
+    }
+    .ui-accordion .ui-accordion-header .ui-icon {
+      margin-top: -18px;
     }
   }
 }

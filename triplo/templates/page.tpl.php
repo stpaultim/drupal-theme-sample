@@ -10,7 +10,7 @@
 
 <div id="page">
 
-
+  <div id="background"></div>
 
   <header class="header" id="header" role="banner">
 
@@ -42,40 +42,40 @@
   <div id="main">
 
     <div id="navigation">
+      <div id="lg-screen-navigation">
 
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" role="navigation" tabindex="-1">
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see https://drupal.org/project/menu_block
-          print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )); ?>
-        </nav>
-      <?php endif; ?>
+        <?php if ($main_menu): ?>
+          <nav id="main-menu" role="navigation" tabindex="-1">
+            <?php
+            // This code snippet is hard to modify. We recommend turning off the
+            // "Main menu" on your sub-theme's settings form, deleting this PHP
+            // code block, and, instead, using the "Menu block" module.
+            // @see https://drupal.org/project/menu_block
+            print theme('links__system_main_menu', array(
+              'links' => $main_menu,
+              'attributes' => array(
+                'class' => array('links', 'inline', 'clearfix'),
+              ),
+              'heading' => array(
+                'text' => t('Main menu'),
+                'level' => 'h2',
+                'class' => array('element-invisible'),
+              ),
+            )); ?>
+          </nav>
+        <?php endif; ?>
 
-      <?php print render($page['navigation']); ?>
+        <?php print render($page['navigation']); ?>
+      </div>
+
+      <img class="mobile-logo" src="/sites/default/files/ward6logo.png">
 
     </div>
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
+
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
@@ -85,15 +85,23 @@
       <?php /** print render($page['content']); */ ?>
       <?php print render($page['top']); ?>
       <div class="max-width">
-        <?php print render($page['top_left']); ?>
-        <?php print render($page['top_right']); ?>
+        <div class="left-column">
+          <?php print render($page['top_left']); ?>
+        </div>
+        <div class="right-column">
+          <?php print render($page['top_right']); ?>
+        </div>
       </div>
       
       <?php print render($page['middle']); ?>
 
       <div class="max-width">
-        <?php print render($page['lower_left']); ?>
-        <?php print render($page['lower_right']); ?>
+        <div class="left-column">
+          <?php print render($page['lower_left']); ?>
+        </div>
+        <div class="right-column">
+          <?php print render($page['lower_right']); ?>
+        </div>
       </div>
       <?php print render($page['lower']); ?>
     </div>
